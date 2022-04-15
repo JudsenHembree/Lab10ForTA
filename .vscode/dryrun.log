@@ -1,0 +1,6 @@
+make -f /home/judsen/Code/2311TA/semester 2/Lab10 --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/judsen/Code/Cmemes/Lab10SelfImplement'
+make: Leaving directory '/home/judsen/Code/Cmemes/Lab10SelfImplement'
+ 
+make: *** /home/judsen/Code/2311TA/semester 2/Lab10: Is a directory.  Stop.
+

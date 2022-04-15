@@ -18,12 +18,23 @@ typedef struct pixel_t{
     int blue;
 }pixel;
 
+//matrix utils
+int** allocateMatrix(int, int);
+void showMatrix(int, int, int**);
+
+//reading utils
 void readHeader(header*, char*);
+void skipHeader(FILE*);
 pixel** readPPM(header*, char*);
 void lookForEndline(FILE*);
-void pushPPM(header*, pixel**, char*);
+
+//full ppm utils
 pixel** allocatePPM(header*);
-void skipHeader(FILE*);
+void pushPPM(header*, pixel**, char*);
 pixel** copyPPM(header*, pixel**);
 
+//calcs
+void filterPPM(header*, pixel**, pixel**, int**, int);
+pixel filterPixel(pixel**, int**, int, int, int);
+int clamp(int);
 #endif
